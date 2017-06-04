@@ -1,3 +1,13 @@
-<p>
-  {{ blogDataD.data[blogDataD.activeId].title }}
-</p>
+
+  <div class="col-xs-12">
+   <img
+     class="img-responsive"
+     src="{{ blogDataD.data[blogDataD.activeId].imgUrl}}" >
+  </div>
+
+
+<div class="col-xs-12" [innerHTML] = "blogDataD.data[blogDataD.activeId].desc">
+
+</div>
+
+
