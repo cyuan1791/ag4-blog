@@ -1,7 +1,6 @@
 import {MyUtil} from './myutil';
 import {Http, Response} from '@angular/http';
 
-import 'rxjs/Rx';
 
 import { Observable } from 'rxjs/Observable';
 import {Injectable, Inject} from '@angular/core';
@@ -18,8 +17,10 @@ export class BlogService {
     ]
   }
 
-  constructor(private http: Http, @Inject('dataURL') dataURL) {
-    this.http.get(dataURL).subscribe(
+  /*constructor(private http: Http, @Inject('dataURL') dataURL) {
+    this.http.get(dataURL).subscribe(*/
+  constructor(private http: Http) {
+    this.http.get('http://a.webcmsnow.com/getBlogData.php').subscribe(
     (res: Response) => {
       const data = res.json();
       this.blogData.activeId = data.activeId;
