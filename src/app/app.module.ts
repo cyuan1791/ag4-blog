@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { BlogListComponent } from './blog-list/blog-list.component';
 import { BlogDetailsComponent } from './blog-details/blog-details.component';
 import {BlogService} from './blog.service';
+import {WindowRef} from './window-ref';
 
 /*
 declare var dataURL: any;
@@ -27,6 +28,7 @@ declare var dataURL: any;
   ],
   providers: [
     BlogService,
+    WindowRef
 /*
     {provide: 'dataURL', useValue: dataURL}
 */
