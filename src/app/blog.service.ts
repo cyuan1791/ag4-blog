@@ -33,8 +33,8 @@ export class BlogService {
       this.blogData.activeId = data.activeId;
       this.blogData.listStartMsg = data.listStartMsg;
       this.blogData.data = data['data'];
-      console.log(data);
-      console.log(data['data']);
+      /*console.log(data);
+      console.log(data['data']);*/
     }
     );
   }
