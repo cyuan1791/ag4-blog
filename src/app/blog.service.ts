@@ -1,4 +1,4 @@
-import {MyUtil} from './myutil';
+
 import {Http, Response} from '@angular/http';
 
 
