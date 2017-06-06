@@ -13,6 +13,7 @@ import {WindowRef} from './window-ref';
 export class BlogService {
   blogData = {
     activeId: 0,
+    listStartMsg: '',
     data: [
       {'title': '', 'imgUrl': '', 'desc': ''},
       /*{'title': 'title two', 'imgUrl': 'http://archive.webcmsd.com/images/mountains1386x554.jpg', 'desc': MyUtil.text()},
@@ -30,7 +31,9 @@ export class BlogService {
     (res: Response) => {
       const data = res.json();
       this.blogData.activeId = data.activeId;
+      this.blogData.listStartMsg = data.listStartMsg;
       this.blogData.data = data['data'];
+      console.log(data);
       console.log(data['data']);
     }
     );
