@@ -13,7 +13,7 @@ import {Observable} from 'rxjs/Observable';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  private blogData;
+  public blogData;
 
   constructor(private blogService: BlogService) {
     this.blogData = blogService.blogData;
