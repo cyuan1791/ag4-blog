@@ -15,7 +15,7 @@ export class BlogService {
     activeId: 0,
     listStartMsg: '',
     data: [
-      {'title': '', 'imgUrl': '', 'desc': ''},
+      {'title': '', 'imgUrl': '', 'desc': '', 'date': ''},
       /*{'title': 'title two', 'imgUrl': 'http://archive.webcmsd.com/images/mountains1386x554.jpg', 'desc': MyUtil.text()},
       {'title': 'title three', 'imgUrl': 'http://archive.webcmsd.com/images/sf_gate1440x350.jpg', 'desc': MyUtil.text()},*/
     ]
