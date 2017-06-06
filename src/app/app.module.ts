@@ -8,6 +8,8 @@ import { BlogListComponent } from './blog-list/blog-list.component';
 import { BlogDetailsComponent } from './blog-details/blog-details.component';
 import {BlogService} from './blog.service';
 
+declare var dataURL: any;
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +21,10 @@ import {BlogService} from './blog.service';
     FormsModule,
     HttpModule
   ],
-  providers: [BlogService],
+  providers: [
+    BlogService,
+    {provide: 'dataURL', useValue: dataURL}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
