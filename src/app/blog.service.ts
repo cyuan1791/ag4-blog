@@ -31,6 +31,7 @@ export class BlogService {
       const data = res.json();
       this.blogData.activeId = data.activeId;
       this.blogData.data = data['data'];
+      console.log(data['data']);
     }
     );
   }
