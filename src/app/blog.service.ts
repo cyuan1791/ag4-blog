@@ -23,8 +23,10 @@ export class BlogService {
   /*constructor(private http: Http, @Inject('dataURL') dataURL) {
     this.http.get(dataURL).subscribe(*/
   constructor(private http: Http, private winRef: WindowRef) {
+/*
     console.log(winRef.nativeWindow['myURL']);
-    this.http.get('http://a.webcmsnow.com/getBlogData.php').subscribe(
+*/
+    this.http.get(winRef.nativeWindow['myURL']).subscribe(
     (res: Response) => {
       const data = res.json();
       this.blogData.activeId = data.activeId;
