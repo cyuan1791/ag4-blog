@@ -1,5 +1,6 @@
 <ul class="list-group">
   <li  class="list-group-item" *ngFor="let data of blogDataL['data']; let i=index" (click)="selectId(i)">
-    <span class="blog-date">{{ data.date}}</span> <span class="blog-title">{{ data.title }}</span>
+    <span class="blog-title">{{ data.title }}</span>
+    <h5 class="blog-date">{{ data.date}}</h5>
   </li>
 </ul>
