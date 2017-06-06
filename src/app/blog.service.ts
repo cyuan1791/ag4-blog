@@ -2,7 +2,9 @@ import {MyUtil} from './myutil';
 import {Http, Response} from '@angular/http';
 
 
+/*
 import { Observable } from 'rxjs/Observable';
+*/
 import {Injectable, Inject} from '@angular/core';
 import {WindowRef} from './window-ref';
 
