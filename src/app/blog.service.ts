@@ -12,8 +12,9 @@ import {WindowRef} from './window-ref';
 @Injectable()
 export class BlogService {
   blogData = {
+    'prop': {
     activeId: 0,
-    listStartMsg: '',
+    listStartMsg: ''},
     data: [
       {'title': '', 'imgUrl': '', 'desc': '', 'date': ''},
       /*{'title': 'title two', 'imgUrl': 'http://archive.webcmsd.com/images/mountains1386x554.jpg', 'desc': MyUtil.text()},
@@ -30,8 +31,7 @@ export class BlogService {
     this.http.get(winRef.nativeWindow['myURL']).subscribe(
     (res: Response) => {
       const data = res.json();
-      this.blogData.activeId = data.activeId;
-      this.blogData.listStartMsg = data.listStartMsg;
+      this.blogData.prop = data.prop;
       this.blogData.data = data['data'];
       /*console.log(data);
       console.log(data['data']);*/

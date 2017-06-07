@@ -2,11 +2,11 @@
   <div class="col-xs-12">
    <img
      class="img-responsive"
-     src="{{ blogDataD.data[blogDataD.activeId].imgUrl}}" >
+     src="{{ blogDataD.data[blogDataD.prop.activeId].imgUrl}}" >
   </div>
 
 
-<div class="col-xs-12" [innerHTML] = "blogDataD.data[blogDataD.activeId].desc">
+<div class="col-xs-12" [innerHTML] = "blogDataD.data[blogDataD.prop.activeId].desc">
 
 </div>
 

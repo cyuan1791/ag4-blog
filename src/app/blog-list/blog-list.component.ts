@@ -16,6 +16,6 @@ export class BlogListComponent implements OnInit {
   ngOnInit() {
   }
   selectId(id: number) {
-    this.blogService.blogData.activeId = id;
+    this.blogService.blogData.prop.activeId = id;
   }
 }
